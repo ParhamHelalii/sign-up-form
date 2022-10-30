@@ -1,8 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
-const port = 3000;
+
 const cors = require("cors");
 
 app.use(express.json());
@@ -13,7 +14,6 @@ app.use(
 );
 const userSchema = new mongoose.Schema(
   {
-    
     username: String,
     password: String,
     email: String,
@@ -36,7 +36,5 @@ app.post("/user", async (req, res) => {
 
 app.listen(3000, async () => {
   console.log("listening on port 3000");
-  await mongoose.connect(
-    "mongodb+srv://parhamehelali:test123@test1.tdaf11d.mongodb.net/fullstack?retryWrites=true&w=majority"
-  );
+  await mongoose.connect(process.env.MONGODB_URL);
 });
