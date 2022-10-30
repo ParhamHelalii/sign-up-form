@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-container">
+        <h2 class="title">Sign up</h2>
+        <!-- 1 Input -->
+        <input id="username-input" type="text" placeholder="Username*" />
+        <label id="username-label" class="status-label"></label>
+        <!-- 2 Input -->
+        <input id="email-input" type="email" placeholder="Email *" />
+        <label id="email-label" class="status-label"></label>
+        <!-- 3 Input -->
+        <input id="password-input" type="password" placeholder="Password*"/>
+        <label id="password-label" class="status-label"></label>
+        <!-- 4 Input -->
+        <input
+          id="confirm-password-input"
+          type="password"
+          placeholder="Confirm password*"
+        />
+        <label id="confirm-password-label" class="status-label"></label>
+        <!-- 5 Input -->
+        <label id="agree-label" class="checkbox-label">
+          <input id="agree" type="checkbox" class="agreement"/>
+          Agree to terms and conditions
+        </label>
+        <div class="buttons-container">
+          <button type="reset" id="reset"> Reset</button>
+          <button type="submit" id="signUp2"> Sign up </button>
+          <button type="submit" id="previous"> <a href="./index.html"> Back</button></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

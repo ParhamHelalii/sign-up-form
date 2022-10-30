@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+.title {
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  position: relative;
+  background-image: url("./background.jpg");
+}
+p {
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+body::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff27;
+  border-radius: 50%;
+  top: 40px;
+  left: 200px;
+  position: absolute;
+}
+
+body::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff27;
+  border-radius: 50%;
+  top: 400px;
+  right: 100px;
+  position: absolute;
+}
+
+/* ------- CONTAINERS -------- */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  max-width: 500px;
+  min-height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 10px;
+  z-index: 9;
+}
+/* ------- HEADING -------- */
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 10px;
+  color: rgba(27, 27, 27, 0.802);
+}
+
+/* ------- INPUT -------- */
+
+input {
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #1818183a;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+input:focus {
+  outline: none;
+  border-color: #a620dbad;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+/* ------- BUTTON -------- */
+
+button {
+  background-color: #399342;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  background-color: #399342;
+}
+button:active {
+  filter: brightness(0.9);
+}
+
+.status-label {
+  font-size: 11px;
+  margin: 0 10px;
+  color: red;
+}
+.singUp-button {
+  border-radius: 5px;
+}
+#signUp2 {
+  margin-left: 10px;
+  margin-top: -38px;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 10px;
+}
+#reset {
+  display: flex;
+  background-color: red;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 10px;
+}
+#previous {
+  margin-right: 10px;
+  margin-top: -35px;
+  background-color: tomato;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 10px;
+}
