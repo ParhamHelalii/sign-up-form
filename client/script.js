@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   };
 
   const postData = async (data) => {
-    const response = await fetch("http://localhost:3000/user", {
+    const response = await fetch("https://sign-up-kott.onrender.com/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
